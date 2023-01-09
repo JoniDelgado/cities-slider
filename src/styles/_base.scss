@@ -1,0 +1,33 @@
+@use './variables';
+@use './mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+       font-family: variables.$Poppins;
+    background-image: url('images/bg-image.jpg');
+    @include mixins.bg-images();
+}
+
+input, textarea {
+    padding: .4rem;
+    background-color: transparent;
+    border: none;
+    border-radius: variables.$radius;
+
+    &:focus {
+        outline: none;
+        background-color: white;
+    }
+
+}
+
+
+
+
