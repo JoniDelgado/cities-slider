@@ -10,7 +10,7 @@
 body {
     width: 100vw;
     height: 100vh;
-       font-family: variables.$Poppins;
+    font-family: variables.$Poppins;
     background-image: url('images/bg-image.jpg');
     @include mixins.bg-images();
 }
