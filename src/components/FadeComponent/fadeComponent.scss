@@ -1,0 +1,14 @@
+@use "../../styles/mixins";
+
+.fade {
+    text-align: center;
+    @include mixins.fade-in(1s);
+
+    
+    &--fade-in {
+        opacity: 1;
+        transform: translate(0) scale(1);
+    
+    }
+}
+

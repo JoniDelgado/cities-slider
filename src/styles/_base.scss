@@ -5,13 +5,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+    ::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 body {
     width: 100vw;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: variables.$Poppins;
-    background-image: url('images/bg-image.jpg');
+    background-image: url('images/fondo.jpg');
     @include mixins.bg-images();
 }
 
@@ -25,8 +32,8 @@ input, textarea {
         outline: none;
         background-color: white;
     }
-
 }
+
 
 
 

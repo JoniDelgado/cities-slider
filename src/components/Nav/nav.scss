@@ -2,9 +2,13 @@
 
 .nav {
     width: 100%;
-    @include mixins.flexbox();
+    padding: 0 1rem;
+    @include mixins.flexbox(row, start);
+    position: sticky;
+    top: 0;
+    left: 0;
+z-index: 100;
 
-    // background-color: white;
 
     &__image {
         @include mixins.images(20px, 20px);
